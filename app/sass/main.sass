@@ -1,0 +1,261 @@
+@import "fonts"
+@import "bourbon"
+@import "variables"
+
+html 
+  box-sizing: border-box
+
+figure
+  margin: 0
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+*
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important
+  outline: none !important
+*:focus
+  outline: none
+
+
+.clearfix:after
+  content: ""
+  display: table
+  clear:both
+
+body
+  min-width: 1030px
+  font: $font-size-root $font-root
+  color: $color-root
+  line-height: 1.2
+
+p
+  margin-top: 0
+  margin-bottom: 10px
+
+%ulli
+  margin: 0
+  padding: 0
+  list-style: none
+
+a:hover
+  text-decoration: none
+
+.container 
+  width: 1030px
+  margin: 0 auto
+  padding: 0 15px
+
+.header-page
+  margin-bottom: 27px
+  background: url(../img/header__bg.jpg) top center no-repeat
+  &__dec
+    padding-bottom: 35px
+    background: url(../img/header__bg--bottom.png) bottom center no-repeat
+  &__nav-bar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 53px
+    border-bottom: 1px solid rgba(0,0,0, 0.4)
+  &__main
+    border-top: 1px solid rgba(255,255,255, 0.3)
+    padding-top: 34px
+  &__wrap-info
+  &__title
+    margin-top: 0
+    text-align: center
+    color: #fff
+  &__wrap-btn
+    padding-bottom: 30px
+    text-align: center
+  &__report-info
+    display: none
+  &:after
+    content: ' '
+.main-nav
+  &__list
+    @extend %ulli
+    display: flex
+      
+  &__item
+    &:first-child a
+      margin-left: 0
+    a
+      text-decoration: none
+      color: #fff
+      margin-left: 28px
+      transition: all 0.3s ease
+      &:hover
+        color: #71f0ff
+
+.report-head
+  display: flex
+  align-items: center
+  padding: 0 46px
+  padding-bottom: 38px
+  color: #fff
+  &__title
+    padding-right: 84px
+    font-size: 100px
+    line-height: 1.2
+    text-align: right
+    font-family: $font-light
+  &__year
+    padding-left: 60px
+    border-left: 1px solid #fff
+    font-size: 265px
+    line-height: 1
+    font-family: $font-root-bold
+    letter-spacing: -18px
+
+.btn
+  display: inline-block
+  padding: 0 23px
+  border: 1px solid #fff
+  border-radius: 10px
+  background: #fff
+  text-decoration: none
+  color: #3680be
+  line-height: 24px
+  transition: all 0.3s ease
+  &:hover
+    background: transparent
+    color: #fff
+
+.report-info
+  display: flex
+  &__r
+    color: #fff
+  &__l
+    padding-right: 24px
+  &__photo
+    margin-bottom: 14px
+    border: 1px solid #fff
+    border-radius: 50%
+    img
+      display: block
+.report-info-name
+  color: #fff
+  text-align: center
+  &__bold
+    font-family: $font-root-bold
+.on
+  .header-page__dec
+    padding-bottom: 86px
+
+
+// main
+.section-page
+  // &__wrap-title
+  &__wrap-description
+    padding-bottom: 32px
+.section-title
+  &__inner
+    margin: 0
+    padding-bottom: 12px
+    font: 30px $font-root-smbold
+    color: #3680be
+    text-align: center
+
+
+.features
+  position: relative
+  padding-top: 2px
+  padding-bottom: 114px
+  &::after
+    content: " "
+    display: block
+    margin: 0 auto
+    position: absolute
+    top: 17px
+    left: 0
+    right: 0
+    height: 1px
+    width: 836px
+    background: #dddddd
+    z-index: 1
+  &__list
+    position: relative
+    z-index: 2
+    @extend %ulli
+    display: flex
+    justify-content: space-between
+  &__items
+    width: (100%/6);
+    text-align: center
+    // &:first-child
+    //   text-align: left
+    // &:last-child
+    //   text-align: right
+  &__number
+    display: inline-block
+    margin-bottom: 26px
+    width: 31px
+    height: 31px
+    border-radius: 50%
+    font: 19px $font-root-bold
+    box-shadow: inset 0 0 0 1px #cbcbcb
+    line-height: 31px
+    text-align: center
+    background: #dddddd
+    color: #fff
+  &__name
+    display: block
+    font: 13px $font-root-bold
+    color: #c0c0c0
+  &__description
+    display: none
+
+.tabs
+  &__inner
+    background: #fff
+  &__caption
+    padding: 45px 0
+    // box-shadow: inset 0 5px 5px #ddd
+    background: url(../img/tabs__bg.png) left top no-repeat,
+    url(../img/tabs__bg-bottom.png) left bottom no-repeat
+
+    text-align: center
+    @extend %ulli
+    .active
+      
+
+  &__content
+    display: none
+    padding: 12px
+    background: #fff
+    text-align: center
+    img
+      width: 100%
+    &.active
+      display: block
+
+  .tabs-item
+    display: inline-block
+    margin: 0 20px
+    font-family: $font-root-smbold
+    font-size: 16px
+    text-transform: uppercase
+    text-align: center
+    cursor: pointer
+    text-decoration: underline
+    transition: $transition
+    &:hover
+      opacity: 0.9
+    &--сol1.active
+      color: #00d346
+      opacity: 1
+    &--col2.active
+      color: #78432f
+      opacity: 1
+    &--сol3.active
+      opacity: 1
+      color: #1d857a
+
+
+
+
+// media
+@import "media"
