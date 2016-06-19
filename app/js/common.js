@@ -5,6 +5,12 @@ $(function() {
     return false;
   });
 
+
+  $('ul.features__list').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active');
+  });
+  
   // tabs
     $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
       $(this)

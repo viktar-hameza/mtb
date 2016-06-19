@@ -183,12 +183,78 @@ a:hover
     display: flex
     justify-content: space-between
   &__items
+    position: relative
     width: (100%/6);
     text-align: center
+    cursor: pointer
     // &:first-child
     //   text-align: left
     // &:last-child
     //   text-align: right
+    &--c1.active, &--c1:hover
+      color: #629924
+      .features__number
+        background: #629924
+        box-shadow: inset 0 0 0 1px #629924
+        color: #fff
+        transition: $transition
+      .features__name
+        color: #629924
+    &--c2.active, &--c2:hover
+      color: #208ab9
+      .features__number
+        background: #208ab9
+        box-shadow: inset 0 0 0 1px #208ab9
+        color: #fff
+        transition: $transition
+      .features__name
+        color: #208ab9
+    &--c3.active, &--c3:hover
+      color: #b42961
+      .features__number
+        background: #b42961
+        box-shadow: inset 0 0 0 1px #b42961
+        color: #fff
+        transition: $transition
+      .features__name
+        color: #b42961
+    &--c4.active, &--c4:hover
+      color: #f25331
+      .features__number
+        background: #f25331
+        box-shadow: inset 0 0 0 1px #f25331
+        color: #fff
+        transition: $transition
+      .features__name
+        color: #f25331
+      .features__description
+        width: 306px
+        left: -50%
+    &--c5.active, &--c5:hover
+      transition: $transition
+      color: #1d857a
+      .features__number
+        background: #1d857a
+        box-shadow: inset 0 0 0 1px #1d857a
+        color: #fff
+      .features__name
+        color: #1d857a
+      .features__description
+        width: 306px
+        left: -50%
+    &--c6.active, &--c6:hover
+      color: #d41c22
+      .features__number
+        background: #d41c22
+        box-shadow: inset 0 0 0 1px #d41c22
+        color: #fff
+      .features__name
+        color: #d41c22
+      .features__description
+        width: 306px
+        left: -100%
+        text-align: right
+
   &__number
     display: inline-block
     margin-bottom: 26px
@@ -206,8 +272,17 @@ a:hover
     font: 13px $font-root-bold
     color: #c0c0c0
   &__description
+    position: absolute
+    top: 90px
+    left: 0
+    right: 0
+    text-align: center
+    // width: 356px
     display: none
-
+.features__items.active
+  .features__description
+    display: block
+    
 .tabs
   &__inner
     background: #fff
@@ -224,11 +299,8 @@ a:hover
 
   &__content
     display: none
-    padding: 12px
+    padding: 20px 0
     background: #fff
-    text-align: center
-    img
-      width: 100%
     &.active
       display: block
 
@@ -255,7 +327,147 @@ a:hover
       color: #1d857a
 
 
+.grid-sl
+  padding: 0 48px
+
+  &__row
+    display: flex
+    padding: 18px 0
+    border-top: 1px solid #ddd
+    &:first-child
+      border: 0
+      .grid-sl__item
+        padding-top: 0
+  &__item
+    position: relative
+    width: (100%/2)
+    padding-right: 15px
+    padding-top: 30px
+    &::after
+      content: " "
+      position: absolute
+      top: 0
+      right: 0
+      width: 1px
+      height: 100%
+      background: #ddd
+    &:last-child
+      padding-right: 0
+      padding-left: 15px
+    &:last-child::after
+      display: none
+
+.sl-item
+  display: flex
+  min-height: 286px
+  &__l
+    width: 176px
+    text-align: center
+    // float: left
+  &__r
+    width: 256px
+    float: left
+  &__title
+    padding-bottom: 10px
+    font-size: 16px
+    color: #00d346
+    font-family: $font-root-smbold
+  &--brown
+    .sl-item__title
+      color: #78432f
+  &--green
+    .sl-item__title
+      color: #1d857a
 
 
+
+
+// slick
+.slick-slide
+  margin: 0 !important
+.slick-list
+  text-align: left
+.slick-dots
+  text-align: left
+
+.slick-dots li
+  width: 10px
+  height: 10px
+  padding-bottom: 0
+
+.slick-dots li button:before
+  content: ' '
+  width: 8px
+  height: 8px
+  background-color: #ddd
+  box-shadow: 0 0 0 0 1px #cbcbcb
+  border-radius: 50%
+  opacity: 1
+
+.slick-dots li.slick-active button:before
+  background: #00d346
+.sl-item--brown
+  .slick-dots li.slick-active button:before
+    background: #78432f
+
+.slick-dots li:first-child
+  margin-left: 0
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+.slick-prev
+  left: 0
+
+.slick-prev, .slick-next
+  width: 26px
+  height: 26px
+.slick-prev:before
+  content: ''
+  display: block
+  width: 26px
+  height: 26px
+  background: url(../img/arrows.png) bottom right no-repeat
+.slick-next:before
+  content: ''
+  display: block
+  width: 26px
+  height: 26px
+  background: url(../img/arrows.png) top right no-repeat
+.sl-item--brown
+  .slick-prev:before
+    background: url(../img/arrows--br.png) bottom right no-repeat
+  .slick-next:before
+    background: url(../img/arrows--br.png) top right no-repeat
+
+.slick-prev, .slick-next
+  top: auto;
+  bottom: -40px
+  z-index: 10
+.slick-dotted.slick-slider
+  margin-bottom: 36px
+.slick-next 
+  left: 40px
+.slick-dots
+  top: -25px
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+  opacity: 1
+.slick-prev.slick-disabled:before
+  background: url(../img/arrows.png) top left no-repeat
+.slick-next.slick-disabled:before
+  background: url(../img/arrows.png) bottom left no-repeat
+.slick-slide
+  p
+    width: 256px
+.regular
+  &__title
+    font-family: $font-root-bold
+  &__list
+    width: 256px
+    @extend %ulli
+
+
+.slick-list
+  height: 100% !important
 // media
 @import "media"
