@@ -181,12 +181,22 @@ a:hover {
 .section-page__wrap-description {
   padding-bottom: 32px; }
 
+.section-page--bg .section-page__wrap-description {
+  padding-top: 25px; }
+
 .section-title__inner {
   margin: 0;
   padding-bottom: 12px;
   font: 30px "OpenSansSemiBold", "Arial", sans-serif;
   color: #3680be;
   text-align: center; }
+
+.section-title--bg {
+  background: #5c98ca; }
+  .section-title--bg .section-title__inner {
+    color: #fff;
+    padding-bottom: 8px;
+    padding-top: 8px; }
 
 .features {
   position: relative;
@@ -344,6 +354,21 @@ a:hover {
   .tabs .tabs-item--сol3.active {
     opacity: 1;
     color: #1d857a; }
+  .tabs .tabs-item--сol4.active {
+    color: #fd4141;
+    opacity: 1; }
+  .tabs .tabs-item--col5.active {
+    color: #964251;
+    opacity: 1; }
+  .tabs .tabs-item--сol6.active {
+    opacity: 1;
+    color: #6f35ab; }
+  .tabs .tabs-item--сol7.active {
+    opacity: 1;
+    color: #f80058; }
+  .tabs .tabs-item--сol8.active {
+    opacity: 1;
+    color: #00d346; }
 
 .grid-sl {
   padding: 0 48px; }
