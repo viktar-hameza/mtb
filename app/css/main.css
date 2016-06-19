@@ -157,12 +157,13 @@ a:hover {
 .report-info {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  lex: 1; }
   .report-info__r {
-    color: #fff; }
+    color: #fff;
+    width: 777px; }
   .report-info__l {
-    padding-right: 24px;
-    width: 235px; }
+    padding-right: 24px; }
   .report-info__photo {
     margin-bottom: 14px;
     border: 1px solid #fff;
