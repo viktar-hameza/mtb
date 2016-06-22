@@ -198,9 +198,10 @@ a:hover {
 .section-title--bg {
   background: #5c98ca; }
   .section-title--bg .section-title__inner {
-    color: #fff;
     padding-bottom: 8px;
-    padding-top: 8px; }
+    padding-top: 8px;
+    color: #fff;
+    text-transform: uppercase; }
 
 .features {
   position: relative;
@@ -420,11 +421,20 @@ a:hover {
     padding-bottom: 10px;
     font-size: 16px;
     color: #00d346;
-    font-family: "OpenSansSemiBold", "Arial", sans-serif; }
+    font-family: "OpenSansSemiBold", "Arial", sans-serif;
+    text-transform: uppercase; }
   .sl-item--brown .sl-item__title {
     color: #78432f; }
+    .sl-item--brown .sl-item__title a {
+      color: #78432f; }
   .sl-item--green .sl-item__title {
     color: #1d857a; }
+    .sl-item--green .sl-item__title a {
+      color: #1d857a; }
+
+.sl-item__title a {
+  color: #00d346;
+  text-decoration: none; }
 
 .slick-slide {
   margin: 0 !important; }
@@ -522,3 +532,62 @@ a:hover {
 
 .slick-list {
   height: 100% !important; }
+
+.container-inner {
+  padding: 0 48px; }
+
+.retail {
+  padding-top: 16px; }
+  .retail__top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 22px; }
+  .retail__l {
+    padding-right: 58px; }
+  .retail__r {
+    width: 252px; }
+  .retail-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "OpenSansSemiBold", "Arial", sans-serif; }
+    .retail-title--c1 {
+      color: #fd4141; }
+    .retail-title--c2 {
+      color: #964251; }
+    .retail-title--c3 {
+      color: #7036ac; }
+    .retail-title--c4 {
+      color: #f80058; }
+  .retail__bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+.col-tr {
+  width: 262px;
+  margin-left: 60px;
+  text-align: center; }
+  .col-tr--large {
+    width: 262px;
+    margin-left: 60px; }
+  .col-tr:first-child {
+    margin-left: 0; }
+  .col-tr__numb {
+    padding: 4px 0 20px;
+    font-size: 35px;
+    color: #fd4141; }
+  .col-tr__icon {
+    height: 67px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .col-tr__icon img {
+      display: block;
+      margin: auto auto; }
+  .col-tr-title--c2 {
+    color: #964251; }
+  .col-tr-title--c3 {
+    color: #7036ac; }
+  .col-tr-title--c4 {
+    color: #f80058; }
