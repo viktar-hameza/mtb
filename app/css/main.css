@@ -73,6 +73,14 @@ a:hover {
   .header-page__dec {
     padding-bottom: 35px;
     background: url(../img/header__bg--bottom.png) bottom center no-repeat; }
+  .header-page__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; }
+  .header-page__bottom {
+    padding-top: 53px; }
   .header-page__nav-bar {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -99,6 +107,12 @@ a:hover {
     display: none; }
   .header-page:after {
     content: ' '; }
+
+.sticky .header-page__nav-bar {
+  border-bottom: 0; }
+
+.sticky.header-page__top {
+  background: #3870b9; }
 
 .main-nav__list {
   display: -webkit-flex;

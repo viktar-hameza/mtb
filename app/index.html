@@ -34,7 +34,8 @@
 <body>
   <header class="header-page">
     <div class="header-page__dec">
-    <div class="container">
+      <div class="header-page__top">
+      <div class="container">
       <div class="header-page__nav-bar">
         <div class="header-page__logo">
           <a href="/" class="logo">
@@ -44,15 +45,20 @@
         <div class="header-page__nav-wrap">
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a href="#">Наш банк</a></li>
-              <li class="main-nav__item"><a href="#">Розничный бизнес</a></li>
-              <li class="main-nav__item"><a href="#">Корпоративный бизнес</a></li>
-              <li class="main-nav__item"><a href="#">Межбанковский бизнес</a></li>
-              <li class="main-nav__item"><a href="#">Финансовая отчетность</a></li>
+              <li class="main-nav__item main-nav__item--active"><a href="#bank" class="scroll">Наш банк</a></li>
+              <li class="main-nav__item"><a href="#retail" class="scroll">Розничный бизнес</a></li>
+              <li class="main-nav__item"><a href="" class="scroll">Корпоративный бизнес</a></li>
+              <li class="main-nav__item"><a href="#video" class="scroll">Межбанковский бизнес</a></li>
+              <li class="main-nav__item"><a href="#video" class="scroll">Финансовая отчетность</a></li>
             </ul>
           </nav>
         </div>
       </div>
+      </div>
+      </div>
+
+    <div class="header-page__bottom">
+    <div class="container">
         
       <div class="header-page__main">
         <div class="report-head">
@@ -93,7 +99,7 @@
           </div>
         </div>
       </div>
-
+    </div>
     </div>
     </div>
   </header>
@@ -104,7 +110,7 @@
       <div class="section-page__wrap-title">
         <div class="section-title">
           <div class="container">
-            <h2 class="section-title__inner">– НАШ БАНК –</h2>
+            <h2 class="section-title__inner" id="bank">– НАШ БАНК –</h2>
           </div>
         </div>
       </div>
@@ -672,7 +678,7 @@
       <div class="section-page__wrap-title">
         <div class="section-title section-title--bg">
           <div class="container">
-            <h2 class="section-title__inner">– Розничный бизнес –</h2>
+            <h2 class="section-title__inner" id="retail">– Розничный бизнес –</h2>
           </div>
         </div>
       </div>
@@ -1114,6 +1120,31 @@
       $(".slider").css('display', 'block');
     });
 
+
+    $(window).scroll(function () {
+        if( $(window).scrollTop() > 1 && !($('.header-page__top').hasClass('sticky'))){
+          $('.header-page__top').addClass('sticky');
+        } else if ($(window).scrollTop() < 1){
+          $('.header-page__top').removeClass('sticky');
+        }
+    });
+
+    $(".scroll").click(function(event){
+      event.preventDefault();
+      var mq = window.matchMedia( "(max-width : 768px)" );
+      var full_url = this.href;
+      var parts = full_url.split("#");
+      var trgt = parts[1];
+      var target_offset = $("#"+trgt).offset();
+      var target_top = target_offset.top
+      if (!mq.matches) {
+        target_top -= 80
+        $('html, body').animate({scrollTop:target_top}, 500);
+      } 
+      else {
+        $('html, body').animate({scrollTop:target_top}, 0);
+      };
+    });
   </script>
   <!-- endbuild -->
 

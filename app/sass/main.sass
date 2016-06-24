@@ -53,6 +53,16 @@ a:hover
   &__dec
     padding-bottom: 35px
     background: url(../img/header__bg--bottom.png) bottom center no-repeat
+  &__top
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 9999
+    
+    // background: #f9fafb
+  &__bottom
+    padding-top: 53px
   &__nav-bar
     display: flex
     justify-content: space-between
@@ -74,6 +84,10 @@ a:hover
     display: none
   &:after
     content: ' '
+.sticky .header-page__nav-bar
+  border-bottom: 0
+.sticky.header-page__top
+  background: #3870b9
 .main-nav
   &__list
     @extend %ulli
@@ -89,6 +103,7 @@ a:hover
       transition: all 0.3s ease
       &:hover
         color: #71f0ff
+
 
 .report-head
   display: flex
