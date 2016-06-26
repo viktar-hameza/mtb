@@ -372,6 +372,15 @@ a:hover
     &--сol8.active
       opacity: 1
       color: #00d346
+    &--сol9.active
+      opacity: 1
+      color: #a7a7a7
+    &--сol10.active
+      opacity: 1
+      color: #5c98ca
+    &--сol11.active
+      opacity: 1
+      color: #bb9d74
 
 
 .grid-sl
@@ -533,8 +542,10 @@ a:hover
     display: flex
     padding-bottom: 22px
   &__l
+    flex: 1
     padding-right: 58px
   &__r
+    flex: 0 0 252px
     width: 252px
   &-title
     font-size: 16px
@@ -551,6 +562,7 @@ a:hover
       color: #f80058
   &__bottom
     display: flex
+
 .col-tr
   width: 262px
   margin-left: 60px
@@ -577,5 +589,96 @@ a:hover
   &-title--c4
     color: #f80058
 
+
+// .corporate
+.corporate
+  padding-top: 16px
+  .sl-item__title
+    color: #a7a7a7
+.corporate-sec
+  padding: 20px 0
+  border-bottom: 1px solid #dddddd
+  &:first-child
+    padding-top: 0
+.section-info
+  display: flex
+  padding-bottom: 22px
+  &__left
+    flex: 1
+    // padding-right: 58px
+  &__right
+    flex: 0 0 324px
+    width: 324
+.corporate-sec--two
+  padding: 40px 0
+.section-info--two
+  h3
+    margin-top: 0
+  .section-info__left
+    order: 1
+    text-align: right
+  .section-info__right
+    order: 0
+  .wrap-btn-corpo
+    text-align: right
+    margin: 20px 0
+.section-info--three
+  h3
+    margin-top: 0
+  .section-info__left
+    order: 0
+    padding-right: 40px
+  .section-info__right
+    order: 1
+    width: 128px
+    flex: 0 0 128px
+.section-info-title
+  font-size: 16px
+  text-transform: uppercase
+  font-family: "OpenSansSemiBold", "Arial", sans-serif
+  font-weight: normal
+  &--c1
+    color: #a7a7a7
+
+.columns
+  padding-bottom: 23px
+  &__row
+    display: flex
+    text-align: center
+    justify-content: space-between
+  &__col
+    width: 167px
+    // margin-left: 40px
+    &:first-child
+      margin-left: 0
+  &__description
+    padding-top: 15px
+.columns--three
+  padding-bottom: 0
+.corpo-partners
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-bottom: 20px
+.corporate-subtitle
+  text-align: center
+  padding-bottom: 22px
+
+.wrap-btn-corpo
+  text-align: center
+.btn-corpo
+  display: inline-block
+  height: 29px
+  line-height: 27px
+  border-radius: 12px
+  padding: 0 17px
+  border: 1px solid #86b7c3
+  color: #fff
+  background: #86b7c3
+  text-decoration: none
+  &:hover
+    background: #fff
+    color: #86b7c3
 // media
 @import "media"
