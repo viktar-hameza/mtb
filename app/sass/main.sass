@@ -707,12 +707,16 @@ a:hover
       border-bottom: 0
   &__row
     display: flex
-    justify-content: space-between
+    // justify-content: space-between
     padding: 36px 0
     a
       color: transparent !important
   &__col
-    width: 45%
+    width: 50%
+    padding-left: 30px
+    &:first-child
+      border-right: 1px solid #ddd
+      
 .chart-bar
   .charts__row
     padding-top: 0
