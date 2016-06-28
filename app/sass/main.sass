@@ -613,6 +613,8 @@ a:hover
   padding-top: 16px
   .sl-item__title
     color: #a7a7a7
+    a
+      color: #a7a7a7
 .corporate-sec
   padding: 20px 0
   border-bottom: 1px solid #dddddd
@@ -670,12 +672,22 @@ a:hover
   text-transform: uppercase
   font-family: "OpenSansSemiBold", "Arial", sans-serif
   font-weight: normal
+  a
+    transition: $transition
+    &:hover
+      opacity: 0.8
   &--c1
     color: #a7a7a7
+    a
+      color: #a7a7a7
   &--c2
     color: #5c98ca
+    a
+      color: #5c98ca
   &--c3
     color: #bb9d73
+    a
+      color: #bb9d73
 
 .columns
   padding-bottom: 23px
@@ -771,5 +783,32 @@ a:hover
   // padding-left: 10px
   &__label
     font-family: $font-root-bold
+
+
+
+
+
+
+// interbank
+.interbank
+  padding: 30px 0
+.interbank-row
+  overflow: hidden
+  &--l
+    text-align-last: 
+    img
+      float: left
+      padding-right: 28px
+  &--r
+    text-align: right
+    img
+      float: right
+      padding-left: 28px
+  &__text
+    padding-top: 30px
+    a
+      color: #1774c1
+
+
 // media
 @import "media"

@@ -648,6 +648,8 @@ a:hover {
   padding-top: 16px; }
   .corporate .sl-item__title {
     color: #a7a7a7; }
+    .corporate .sl-item__title a {
+      color: #a7a7a7; }
 
 .corporate-sec {
   padding: 20px 0;
@@ -732,12 +734,22 @@ a:hover {
   text-transform: uppercase;
   font-family: "OpenSansSemiBold", "Arial", sans-serif;
   font-weight: normal; }
+  .section-info-title a {
+    transition: all 0.3s ease; }
+    .section-info-title a:hover {
+      opacity: 0.8; }
   .section-info-title--c1 {
     color: #a7a7a7; }
+    .section-info-title--c1 a {
+      color: #a7a7a7; }
   .section-info-title--c2 {
     color: #5c98ca; }
+    .section-info-title--c2 a {
+      color: #5c98ca; }
   .section-info-title--c3 {
     color: #bb9d73; }
+    .section-info-title--c3 a {
+      color: #bb9d73; }
 
 .columns {
   padding-bottom: 23px; }
@@ -846,3 +858,21 @@ a:hover {
 
 .charts-total__label {
   font-family: "OpenSansBold", "Arial", sans-serif; }
+
+.interbank {
+  padding: 30px 0; }
+
+.interbank-row {
+  overflow: hidden; }
+  .interbank-row--l img {
+    float: left;
+    padding-right: 28px; }
+  .interbank-row--r {
+    text-align: right; }
+    .interbank-row--r img {
+      float: right;
+      padding-left: 28px; }
+  .interbank-row__text {
+    padding-top: 30px; }
+    .interbank-row__text a {
+      color: #1774c1; }
