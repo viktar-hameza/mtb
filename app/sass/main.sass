@@ -528,6 +528,7 @@ a:hover
 .slick-next.slick-disabled:before
   background: url(../img/arrows.png) bottom left no-repeat
 .slick-slide
+  margin: 0px 20px
   p
     width: 256px
 .regular
@@ -537,6 +538,9 @@ a:hover
     width: 256px
     @extend %ulli
 
+.slider 
+    margin-top: 25px
+    display: none
 
 .slick-list
   height: 100% !important
@@ -698,6 +702,7 @@ a:hover
   color: #fff
   background: #86b7c3
   text-decoration: none
+  transition: $transition
   &:hover
     background: #fff
     color: #86b7c3

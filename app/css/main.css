@@ -551,14 +551,20 @@ a:hover {
 .slick-next.slick-disabled:before {
   background: url(../img/arrows.png) bottom left no-repeat; }
 
-.slick-slide p {
-  width: 256px; }
+.slick-slide {
+  margin: 0px 20px; }
+  .slick-slide p {
+    width: 256px; }
 
 .regular__title {
   font-family: "OpenSansBold", "Arial", sans-serif; }
 
 .regular__list {
   width: 256px; }
+
+.slider {
+  margin-top: 25px;
+  display: none; }
 
 .slick-list {
   height: 100% !important; }
@@ -767,7 +773,8 @@ a:hover {
   border: 1px solid #86b7c3;
   color: #fff;
   background: #86b7c3;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.3s ease; }
   .btn-corpo:hover {
     background: #fff;
     color: #86b7c3; }
