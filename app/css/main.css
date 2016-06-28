@@ -457,7 +457,10 @@ a:hover {
 
 .sl-item__title a {
   color: #00d346;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  .sl-item__title a:hover {
+    opacity: 0.6; }
 
 .slick-slide {
   margin: 0 !important; }
@@ -581,13 +584,19 @@ a:hover {
     text-transform: uppercase;
     font-family: "OpenSansSemiBold", "Arial", sans-serif;
     font-weight: normal; }
-    .retail-title--c1 {
+    .retail-title a {
+      text-decoration: underline;
+      transition: all 0.3s ease; }
+      .retail-title a:hover {
+        opacity: 0.8;
+        text-decoration: none; }
+    .retail-title--c1 a {
       color: #fd4141; }
-    .retail-title--c2 {
+    .retail-title--c2 a {
       color: #964251; }
-    .retail-title--c3 {
+    .retail-title--c3 a {
       color: #7036ac; }
-    .retail-title--c4 {
+    .retail-title--c4 a {
       color: #f80058; }
   .retail__bottom {
     display: -webkit-flex;
@@ -763,6 +772,8 @@ a:hover {
   padding-top: 33px; }
   .charts__sec {
     border-bottom: 1px solid #ddd; }
+    .charts__sec:last-child {
+      border-bottom: 0; }
   .charts__row {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -771,10 +782,13 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 36px 0; }
+    .charts__row a {
+      color: transparent !important; }
   .charts__col {
     width: 45%; }
-    .charts__col a {
-      color: #fff !important; }
+
+.chart-bar .charts__row {
+  padding-top: 0; }
 
 .charts-title {
   font-family: "OpenSansSemiBold", "Arial", sans-serif;
@@ -782,8 +796,10 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   color: #ff1c1c; }
+  .charts-title--bar {
+    padding-top: 40px; }
 
 .charts-total {
-  padding-left: 10px; }
+  text-align: center; }
   .charts-total__label {
     font-family: "OpenSansBold", "Arial", sans-serif; }

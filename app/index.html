@@ -34,6 +34,7 @@
       <script type="text/javascript" src="js/amcharts.js"></script>
       <script type="text/javascript" src="js/pie.js"></script>
       <script type="text/javascript" src="js/light.js"></script>
+      <script type="text/javascript" src="js/serial.js"></script>
 
       <!-- amCharts javascript code -->
       <script type="text/javascript">
@@ -51,6 +52,7 @@
             "legend": {
               "enabled": true,
               "align": "center",
+              "labelWidth": 320,
               "markerType": "circle",
               "valueText": ""
             },
@@ -85,47 +87,364 @@
       <script type="text/javascript">
             AmCharts.makeChart("chartdiv2",
               {
-    "type": "pie",
-    "angle": 30,
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-    "depth3D": 15,
-    "theme": "light",
-    "labelText": " [[percents]]%",
-    "titleField": "category",
-    "valueField": "column-1",
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-      "enabled": true,
-      "align": "center",
-      "markerType": "circle",
-      "valueText": ""
-    },
-    "titles": [
-              {
-                "id": "Title-1",
-                "size": 15,
-                "text": "Активы 2015 год"
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "labelRadius": 1,
+                "labelText": " [[percents]]%",
+                "titleField": "category",
+                "valueField": "column-1",
+                "theme": "light",
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "align": "center",
+                  "labelWidth": 320,
+                  "markerType": "circle",
+                  "valueText": ""
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": "Активы 2014 год"
+                  }
+                ],
+                "dataProvider": [
+                  {
+                    "category": "Средства в кассе, в банках и иных финансовых учреждениях",
+                    "column-1": "1108870"
+                  },
+                  {
+                    "category": "Кредиты клиентам",
+                    "column-1": "3160557"
+                  },
+                  {
+                    "category": "Прочие активы",
+                    "column-1": "342734"
+                  }
+                ]
               }
-            ],
-    "dataProvider": [
-      {
-        "category": "Средства в кассе, в банках и иных финансовых учреждениях",
-        "column-1": "1593851",
-        "column-2": "1108870"
-      },
-      {
-        "category": "Кредиты клиентам",
-        "column-1": "3971888",
-        "column-2": "3160557"
-      },
-      {
-        "category": "Прочие активы",
-        "column-1": "459484",
-        "column-2": "342734"
-      }
-    ]
-  }
+            );
+
+            AmCharts.makeChart("chartdiv3",
+              {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "labelRadius": 1,
+                "labelText": " [[percents]]%",
+                "colors": [
+                  "#67b7dc",
+                  "#fdd400",
+                  "#84b761",
+                  "#cc4748",
+                  "#cd82ad",
+                  "#2f4074",
+                  "#448e4d",
+                  "#b7b83f",
+                  "#b9783f",
+                  "#b93e3d",
+                  "#913167"
+                ],
+                "titleField": "category",
+                "valueField": "column-1",
+                "theme": "light",
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "align": "center",
+                  "labelWidth": 320,
+                  "markerType": "circle",
+                  "valueText": ""
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": "Обязательства 2015 год"
+                  }
+                ],
+                "dataProvider": [
+                  {
+                    "category": "Средства банков и иных кредиторов",
+                    "column-1": "930308"
+                  },
+                  {
+                    "category": "Средства клиентов",
+                    "column-1": "4326081"
+                  },
+                  {
+                    "category": "Прочие обязательства",
+                    "column-1": "74996"
+                  }
+                ]
+              }
+            );
+
+            AmCharts.makeChart("chartdiv4",
+              {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "labelRadius": 1,
+                "labelText": " [[percents]]%",
+                "colors": [
+                  "#67b7dc",
+                  "#fdd400",
+                  "#84b761",
+                  "#cc4748",
+                  "#cd82ad",
+                  "#2f4074",
+                  "#448e4d",
+                  "#b7b83f",
+                  "#b9783f",
+                  "#b93e3d",
+                  "#913167"
+                ],
+                "titleField": "category",
+                "valueField": "column-1",
+                "theme": "light",
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "align": "center",
+                  "labelWidth": 320,
+                  "markerType": "circle",
+                  "valueText": ""
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": "Обязательства 2014 год"
+                  }
+                ],
+                "dataProvider": [
+                  {
+                    "category": "Средства банков и иных кредиторов",
+                    "column-1": "831369"
+                  },
+                  {
+                    "category": "Средства клиентов",
+                    "column-1": "3019973"
+                  },
+                  {
+                    "category": "Прочие обязательства",
+                    "column-1": "98707"
+                  }
+                ]
+              }
+            );
+
+            AmCharts.makeChart("chartdiv5",
+              {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "labelRadius": 1,
+                "labelText": " [[percents]]%",
+                "colors": [
+                  "#67b7dc",
+                  "#fdd400",
+                  "#84b761",
+                  "#cc4748",
+                  "#cd82ad",
+                  "#2f4074",
+                  "#448e4d",
+                  "#b7b83f",
+                  "#b9783f",
+                  "#b93e3d",
+                  "#913167"
+                ],
+                "titleField": "category",
+                "valueField": "column-1",
+                "theme": "light",
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "align": "center",
+                  "labelWidth": 320,
+                  "markerType": "circle",
+                  "valueText": "",
+                  "maxColumns": 1
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": "Капитал 2015 год"
+                  }
+                ],
+                "dataProvider": [
+                  {
+                    "category": "Уставный фонд",
+                    "column-1": "121857"
+                  },
+                  {
+                    "category": "Резервы и фонды",
+                    "column-1": "571981"
+                  }
+                ]
+              }
+            );
+
+            AmCharts.makeChart("chartdiv6",
+              {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "labelRadius": 1,
+                "labelText": " [[percents]]%",
+                "colors": [
+                  "#67b7dc",
+                  "#fdd400",
+                  "#84b761",
+                  "#cc4748",
+                  "#cd82ad",
+                  "#2f4074",
+                  "#448e4d",
+                  "#b7b83f",
+                  "#b9783f",
+                  "#b93e3d",
+                  "#913167"
+                ],
+                "titleField": "category",
+                "valueField": "column-1",
+                "theme": "light",
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "align": "center",
+                  "labelWidth": 320,
+                  "markerType": "circle",
+                  "valueText": "",
+                  "maxColumns": 1
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": "Капитал 2014 год"
+                  }
+                ],
+                "dataProvider": [
+                    {
+                      "category": "Уставный фонд",
+                      "column-1": "121857"
+                    },
+                    {
+                      "category": "Резервы и фонды",
+                      "column-1": "540255"
+                    }
+                  ]
+              }
+            );
+
+            AmCharts.makeChart("chartdiv-bar",
+              {
+                "type": "serial",
+                "categoryField": "category",
+                "rotate": true,
+                "startDuration": 1,
+                "theme": "light",
+                "categoryAxis": {
+                  "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                  {
+                    "balloonText": "[[title]] | [[category]]:[[value]]",
+                    "fillAlphas": 1,
+                    "id": "AmGraph-1",
+                    "labelText": "[[value]]",
+                    "title": "2015",
+                    "type": "column",
+                    "valueField": "column-1"
+                  },
+                  {
+                    "balloonText": "[[title]] | [[category]]:[[value]]",
+                    "bullet": "round",
+                    "id": "AmGraph-2",
+                    "labelText": "[[value]]",
+                    "lineThickness": 2,
+                    "title": "2014",
+                    "valueField": "column-2"
+                  }
+                ],
+                "guides": [],
+                "valueAxes": [
+                  {
+                    "id": "ValueAxis-1",
+                    "title": ""
+                  }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                  "enabled": true,
+                  "useGraphSettings": true
+                },
+                "titles": [
+                  {
+                    "id": "Title-1",
+                    "size": 15,
+                    "text": ""
+                  }
+                ],
+                "dataProvider": [
+                  {
+                    "category": "Процентные доходы",
+                    "column-1": "1085279",
+                    "column-2": "1016950"
+                  },
+                  {
+                    "category": "Процентные расходы",
+                    "column-1": "663774",
+                    "column-2": "621916"
+                  },
+                  {
+                    "category": "Чистый процентный доход",
+                    "column-1": "411505",
+                    "column-2": "395034"
+                  },
+                  {
+                    "category": "Отчисления в резервы",
+                    "column-1": "618347",
+                    "column-2": "226321"
+                  },
+                  {
+                    "category": "Чистый комиссионный доход",
+                    "column-1": "514488",
+                    "column-2": "409026"
+                  },
+                  {
+                    "category": "Прочие доходы",
+                    "column-1": "409548",
+                    "column-2": "143617"
+                  },
+                  {
+                    "category": "Прочие расходы",
+                    "column-1": "660415",
+                    "column-2": "462145"
+                  },
+                  {
+                    "category": "Прибыль до налога",
+                    "column-1": "56779",
+                    "column-2": "259211"
+                  },
+                  {
+                    "category": "Налог на прибыль",
+                    "column-1": "4672",
+                    "column-2": "38503"
+                  },
+                  {
+                    "category": "Прибыль за отчетный год",
+                    "column-1": "52107",
+                    "column-2": "220708"
+                  }
+                ]
+              }
             );
           </script>
 </head>
@@ -288,8 +607,8 @@
           
           <div class="tabs">
             <ul class="tabs__caption clearfix">
-              <li class="tabs-item tabs-item--сol1 active">Социально значимые проекты</li>
               <li class="tabs-item tabs-item--col2">Наши достижения</li>
+              <li class="tabs-item tabs-item--сol1 active">Социально значимые проекты</li>
               <li class="tabs-item tabs-item--сol3">Повышение лояльности</li>
             </ul>
             <div class="tabs__inner">
@@ -485,7 +804,7 @@
                               </div>
                               <div>
                                 <p>
-                                  В рамках проекта начальник Управления маркетинга МТБанка Екатерина Вареникова разработали программу блока TEEN GURU-MARKETING. В процессе обучения ребята не просто узнали, что такое маркетинг, а разработали маркетинговую стратегию собственных бизнес-проектов. 
+                                  В рамках проекта начальник Управления маркетинга МТБанка Екатерина Вареникова разработала программу блока TEEN GURU-MARKETING. В процессе обучения ребята не просто узнали, что такое маркетинг, а разработали маркетинговую стратегию собственных бизнес-проектов. 
                                 </p>
                               </div>
                               
@@ -809,7 +1128,7 @@
                     <div class="retail">
                       <div class="retail__top">
                         <div class="retail__l">
-                          <h3 class="retail-title retail-title--c1">КАРТА РАССРОЧКИ №1 «Халва»</h3>
+                          <h3 class="retail-title retail-title--c1"><a href="https://www.halva.by" target="_blank">КАРТА РАССРОЧКИ №1 «Халва»</a></h3>
                           <div class="retail__text">
                           <p>Карта рассрочки «Халва» за прошлый год стала по-настоящему народной картой.</p>
                           <p>В программу партнерства постоянно вступают новые магазины в Минске и регионах, тем самым делая покупки для потребителей доступнее. Таким образом, оплатить Халвой сейчас можно практически любой товар или услугу.</p>
@@ -852,7 +1171,7 @@
                     <div class="retail">
                       <div class="retail__top">
                         <div class="retail__l">
-                          <h3 class="retail-title retail-title--c2">БОнусная КАРТА «Халва плюс»</h3>
+                          <h3 class="retail-title retail-title--c2"><a href="https://www.halva.by" target="_blank">БОнусная КАРТА «Халва плюс»</a></h3>
                           <div class="retail__text">
                           <p>
                             Халва Плюс – бонусная карта, позволяющая получить возврат средств бонусными
@@ -901,7 +1220,7 @@
                     <div class="retail">
                       <div class="retail__top">
                         <div class="retail__l">
-                          <h3 class="retail-title retail-title--c3">pay okay</h3>
+                          <h3 class="retail-title retail-title--c3"><a href="http://payokay.mtbank.by" target="_blank">pay okay</a></h3>
                           <div class="retail__text">
                           <p>
                             PayOkay – карта выгодных расчетов. Пользователь PayOkay получает cashback  «живыми деньгами» 1,5% от суммы всех покупок, выгодный курс для расчетов в валюте, возврат
@@ -955,7 +1274,7 @@
                     <div class="retail">
                       <div class="retail__top">
                         <div class="retail__l">
-                          <h3 class="retail-title retail-title--c4">автокарта</h3>
+                          <h3 class="retail-title retail-title--c4"><a href="https://www.mtbank.by/private/cards/auto" target="_blank">автокарта</a></h3>
                           <div class="retail__text">
                           <p>
                             Автокарта – уникальный банковский продукт, не имеющий аналогов в Беларуси. Она создана специально для автовладельцев и позволяет получать возврат «живыми» деньгами в размере 3% от стоимости заправок и покупок на всех АЗС, а также до 10% при пользовании услугами в сети партнеров «Автокарты». Кроме того пользователи гарантированно получают cashback в размере 1% при расчетах «Автокартой» в любых торговых точках.
@@ -1005,7 +1324,7 @@
                                       Акция, которая в преддверии празднования Нового года.
                                       </p>
                                       <p>
-                                        При оформлении карты  PayOkay клиенты могли создать собственную открытку с первональным поздравлением для друзей и близких. В результате была сгенерирована 1521 открытка.
+                                        При оформлении карты  PayOkay клиенты могли создать собственную открытку с персональным поздравлением для друзей и близких. В результате была сгенерирована 1521 открытка.
                                       </p>
                                     </div>
                                   </section>
@@ -1733,6 +2052,39 @@
                     </div>
                   </div>
 
+                  <div class="charts__sec">
+
+                    <div class="charts__row">
+                      <div class="charts__col">
+                        <div id="chartdiv3" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого обязательств:</span> 5 331 385</div>
+                      </div>
+                      <div class="charts__col">
+                        <div id="chartdiv4" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого обязательств:</span> 3 950 049</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="charts__sec">
+
+                    <div class="charts__row">
+                      <div class="charts__col">
+                        <div id="chartdiv5" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого капитал:</span> 693 838</div>
+                      </div>
+                      <div class="charts__col">
+                        <div id="chartdiv6" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого капитал:</span> 662 112</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="charts__sec chart-bar">
+                    <div class="charts-title charts-title--bar">Отчет о прибыли и убытках за 2015 год (в миллионах белорусских рублей)</div>
+                    <div class="charts__row">
+                      <div id="chartdiv-bar" style="width: 100%; height: 600px; background-color: #FFFFFF;" ></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

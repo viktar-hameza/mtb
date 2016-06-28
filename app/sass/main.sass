@@ -443,6 +443,9 @@ a:hover
 .sl-item__title a
   color: #00d346
   text-decoration: none
+  transition: $transition
+  &:hover
+    opacity: 0.6
 
 
 
@@ -552,13 +555,19 @@ a:hover
     text-transform: uppercase
     font-family: $font-root-smbold
     font-weight: normal
-    &--c1
+    a
+      text-decoration: underline
+      transition: $transition
+      &:hover
+        opacity: 0.8
+        text-decoration: none
+    &--c1 a
       color: #fd4141
-    &--c2
+    &--c2 a
       color: #964251
-    &--c3
+    &--c3 a
       color: #7036ac
-    &--c4
+    &--c4 a
       color: #f80058
   &__bottom
     display: flex
@@ -694,23 +703,31 @@ a:hover
   padding-top: 33px
   &__sec
     border-bottom: 1px solid #ddd
+    &:last-child
+      border-bottom: 0
   &__row
     display: flex
     justify-content: space-between
     padding: 36px 0
-
+    a
+      color: transparent !important
   &__col
     width: 45%
-    a
-      color: #fff !important
+.chart-bar
+  .charts__row
+    padding-top: 0
+
 .charts-title
   font-family: $font-root-smbold
   font-size: 16px
   text-transform: uppercase
   text-align: center
   color: #ff1c1c
+  &--bar
+    padding-top: 40px
 .charts-total
-  padding-left: 10px
+  text-align: center
+  // padding-left: 10px
   &__label
     font-family: $font-root-bold
 // media
