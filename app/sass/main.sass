@@ -88,6 +88,7 @@ a:hover
   border-bottom: 0
 .sticky.header-page__top
   background: #5c98ca
+  box-shadow: 1px 0 5px rgba(0,0,0,.5)
 .main-nav
   &__list
     @extend %ulli
@@ -381,6 +382,9 @@ a:hover
     &--сol11.active
       opacity: 1
       color: #bb9d74
+    &--сol12.active
+      opacity: 1
+      color: #006cc6
 
 
 .grid-sl
@@ -726,9 +730,15 @@ a:hover
   font-size: 16px
   text-transform: uppercase
   text-align: center
-  color: #ff1c1c
+  a
+    color: #ff1c1c
+    transition: $transition
+    &:hover
+      opacity: 0.6
   &--bar
     padding-top: 40px
+  &--c2, &--c2 a
+    color: #006cc6
 .charts-total
   // text-align: center
   // padding-left: 10px
