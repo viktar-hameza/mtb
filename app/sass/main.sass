@@ -600,6 +600,8 @@ a:hover
   border-bottom: 1px solid #dddddd
   &:first-child
     padding-top: 0
+  &:last-child
+    border-bottom: 0
 .section-info
   display: flex
   padding-bottom: 22px
@@ -611,6 +613,7 @@ a:hover
     width: 324
 .corporate-sec--two
   padding: 40px 0
+
 .section-info--two
   h3
     margin-top: 0
@@ -622,6 +625,7 @@ a:hover
   .wrap-btn-corpo
     text-align: right
     margin: 20px 0
+
 .section-info--three
   h3
     margin-top: 0
@@ -631,6 +635,10 @@ a:hover
   .section-info__right
     order: 1
     width: 128px
+    flex: 0 0 128px
+.corporate-sec--three
+  .section-info__right
+    width: 450px
     flex: 0 0 128px
 .section-info-title
   font-size: 16px
@@ -680,5 +688,30 @@ a:hover
   &:hover
     background: #fff
     color: #86b7c3
+
+
+.charts
+  padding-top: 33px
+  &__sec
+    border-bottom: 1px solid #ddd
+  &__row
+    display: flex
+    justify-content: space-between
+    padding: 36px 0
+
+  &__col
+    width: 45%
+    a
+      color: #fff !important
+.charts-title
+  font-family: $font-root-smbold
+  font-size: 16px
+  text-transform: uppercase
+  text-align: center
+  color: #ff1c1c
+.charts-total
+  padding-left: 10px
+  &__label
+    font-family: $font-root-bold
 // media
 @import "media"

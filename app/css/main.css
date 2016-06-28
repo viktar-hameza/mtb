@@ -632,6 +632,8 @@ a:hover {
   border-bottom: 1px solid #dddddd; }
   .corporate-sec:first-child {
     padding-top: 0; }
+  .corporate-sec:last-child {
+    border-bottom: 0; }
 
 .section-info {
   display: -webkit-flex;
@@ -683,6 +685,12 @@ a:hover {
       -ms-flex-order: 1;
           order: 1;
   width: 128px;
+  -webkit-flex: 0 0 128px;
+      -ms-flex: 0 0 128px;
+          flex: 0 0 128px; }
+
+.corporate-sec--three .section-info__right {
+  width: 450px;
   -webkit-flex: 0 0 128px;
       -ms-flex: 0 0 128px;
           flex: 0 0 128px; }
@@ -750,3 +758,32 @@ a:hover {
   .btn-corpo:hover {
     background: #fff;
     color: #86b7c3; }
+
+.charts {
+  padding-top: 33px; }
+  .charts__sec {
+    border-bottom: 1px solid #ddd; }
+  .charts__row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 36px 0; }
+  .charts__col {
+    width: 45%; }
+    .charts__col a {
+      color: #fff !important; }
+
+.charts-title {
+  font-family: "OpenSansSemiBold", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff1c1c; }
+
+.charts-total {
+  padding-left: 10px; }
+  .charts-total__label {
+    font-family: "OpenSansBold", "Arial", sans-serif; }

@@ -30,6 +30,104 @@
       margin: 0px 20px;
     }
   </style>
+      <!-- amCharts javascript sources -->
+      <script type="text/javascript" src="js/amcharts.js"></script>
+      <script type="text/javascript" src="js/pie.js"></script>
+      <script type="text/javascript" src="js/light.js"></script>
+
+      <!-- amCharts javascript code -->
+      <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+          {
+            "type": "pie",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "labelText": " [[percents]]%",
+            "titleField": "category",
+            "valueField": "column-1",
+            "theme": "light",
+            "labelRadius": 1,
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+              "enabled": true,
+              "align": "center",
+              "markerType": "circle",
+              "valueText": ""
+            },
+            "titles": [
+              {
+                "id": "Title-1",
+                "size": 15,
+                "text": "Активы 2015 год"
+              }
+            ],
+            "dataProvider": [
+              {
+                "category": "Средства в кассе, в банках и иных финансовых учреждениях",
+                "column-1": "1593851",
+                "column-2": "1108870"
+              },
+              {
+                "category": "Кредиты клиентам",
+                "column-1": "3971888",
+                "column-2": "3160557"
+              },
+              {
+                "category": "Прочие активы",
+                "column-1": "459484",
+                "column-2": "342734"
+              }
+            ]
+          }
+        );
+
+      </script>
+      <script type="text/javascript">
+            AmCharts.makeChart("chartdiv2",
+              {
+    "type": "pie",
+    "angle": 30,
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    "depth3D": 15,
+    "theme": "light",
+    "labelText": " [[percents]]%",
+    "titleField": "category",
+    "valueField": "column-1",
+    "allLabels": [],
+    "balloon": {},
+    "legend": {
+      "enabled": true,
+      "align": "center",
+      "markerType": "circle",
+      "valueText": ""
+    },
+    "titles": [
+              {
+                "id": "Title-1",
+                "size": 15,
+                "text": "Активы 2015 год"
+              }
+            ],
+    "dataProvider": [
+      {
+        "category": "Средства в кассе, в банках и иных финансовых учреждениях",
+        "column-1": "1593851",
+        "column-2": "1108870"
+      },
+      {
+        "category": "Кредиты клиентам",
+        "column-1": "3971888",
+        "column-2": "3160557"
+      },
+      {
+        "category": "Прочие активы",
+        "column-1": "459484",
+        "column-2": "342734"
+      }
+    ]
+  }
+            );
+          </script>
 </head>
 <body>
   <header class="header-page">
@@ -1434,6 +1532,146 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="corporate-sec corporate-sec--two">
+                  <div class="section-info section-info--two">
+                    <div class="section-info__left">
+                      <h3 class="section-info-title section-info-title--c1">
+                        «Блокбастеры для бизнеса»
+                      </h3>
+                      <div class="section-info__text">
+                        <p>
+                          Линейка кредитных продуктов для бизнеса от МТБанка это – 5 продуктов:<br>
+                          кредит в текущую деятельность, инвестиционный кредит,<br>
+                          быстрый лизинг, рефинансирование, овердрафт.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="section-info__right">
+                      <img src="img/photo/logo-korp8.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="corporate__middle">
+                   <div class="columns">
+                    <div class="columns__row">
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.9.2.svg" alt="">
+                        </div>
+                        <div class="columns__title">12 часов</div>
+                        <div class="columns__description">
+                          Самый популярный продукт – быстрый лизинг, рекордно быстрое рассмотрение
+                          и оформление заявки составило 12 часов
+                        </div>
+                      </div>
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.1.svg" alt="">
+                        </div>
+                        <div class="columns__title">5 000 000 000</div>
+                        <div class="columns__description">
+                          Общая сумма заявок
+                          на кредиты превысила
+                          5 млн USD
+                        </div>
+                      </div>
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.6.svg" alt="">
+                        </div>
+                        <div class="columns__title">2 000 000 000</div>
+                        <div class="columns__description">
+                          Максимальная сумма
+                          овердрафта составила
+                          2 млрд BYR
+                        </div>
+                      </div>
+
+                    </div>
+                   </div>
+                  </div>
+
+                </div>
+
+                <div class="corporate-sec corporate-sec--two corporate-sec--three">
+                  <div class="section-info section-info--three">
+                    <div class="section-info__left">
+                      <h3 class="section-info-title section-info-title--c1">
+                        Программа лояльности
+                      </h3>
+                      <div class="section-info__text">
+                        <p>
+                          Программа лояльности для бизнеса позволяет корпоративным клиентам получать бонусные баллы, которые могут быть использованы для получения скидок или подарков. 
+                        </p>
+                        
+                        <p>
+                          <span class="regular__title">Программа стартовала в сентябре 2015 года:</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="section-info__right">
+                      <img src="img/photo/logo-korp9.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="corporate__middle">
+                   <div class="columns columns--three">
+                    <div class="columns__row">
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-people2.svg" alt="">
+                        </div>
+                        <div class="columns__title">93</div>
+                        <div class="columns__description">
+                          В сентябре-декабре были подключены первые
+                          93 клиента
+                        </div>
+                      </div>
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.1.svg" alt="">
+                        </div>
+                        <div class="columns__title">15 025</div>
+                        <div class="columns__description">
+                          За этот период было совершено 207 операций на общую сумму баллов 15 925 МТБаллов
+                        </div>
+                      </div>
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.9.3.svg" alt="">
+                        </div>
+                        <div class="columns__title">77</div>
+                        <div class="columns__description">
+                          Средняя стоимость
+                          одной операции составила
+                          77 МТБаллов
+                        </div>
+                      </div>
+
+                      <div class="columns__col">
+                        <div class="columns__icon">
+                        <img src="img/svg/icon-k-1.5.svg" alt="">
+                        </div>
+                        <div class="columns__title">РКО</div>
+                        <div class="columns__description">
+                          Скидка
+                          на РКО –
+                          самая популярная
+                        </div>
+                      </div>
+
+                    </div>
+                   </div>
+                  </div>
+                </div>
+
+
                 <!-- adfs -->
               </div>
               </div>
@@ -1443,6 +1681,66 @@
             </div>
           </div>
         </div> <!-- container -->
+      </div>
+    </section>
+
+    <section class="section-page section-page--bg">
+      <div class="section-page__wrap-title">
+        <div class="section-title section-title--bg">
+          <div class="container">
+            <h2 class="section-title__inner" id="retail">– Финансовая отчетность –</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-page_content">
+        <div class="container">
+
+          <div class="section-page__wrap-description">
+            <div class="container-inner">
+            <div class="section-description">
+              <p>
+               2015 год выдался для МТБанка достаточно динамичным. Так, активы банка выросли более чем на 30%. Капитал по НСФО вырос за 2015 год на 8%, по МФСО – на 18%.
+              </p>
+            </div>
+            </div>
+          </div>
+            
+          <div class="tabs">
+            <ul class="tabs__caption clearfix">
+              <li class="tabs-item tabs-item--сol4 active">Отчетность по национальным стандартам</li>
+              <li class="tabs-item tabs-item--col5">Отчетность по МФСО</li>
+            </ul>
+          
+          
+          <div class="tabs__inner">
+
+            <div class="tabs__content active">
+              <div class="charts">
+                <div class="container-inner">
+                  
+                  <div class="charts__sec">
+                    <div class="charts-title">Бухгалтерский баланс на 1 января 2016 года (в миллионах белорусских рублей)</div>
+                    <div class="charts__row">
+                      <div class="charts__col">
+                        <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого активы:</span> 6 025 223</div>
+                      </div>
+                      <div class="charts__col">
+                        <div id="chartdiv2" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                        <div class="charts-total"><span class="charts-total__label">Итого активы:</span> 6 025 223</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content">dfgdfg</div>
+          </div>
+          </div>
+
+        </div>
       </div>
     </section>
   </div>
