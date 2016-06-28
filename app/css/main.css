@@ -799,7 +799,5 @@ a:hover {
   .charts-title--bar {
     padding-top: 40px; }
 
-.charts-total {
-  text-align: center; }
-  .charts-total__label {
-    font-family: "OpenSansBold", "Arial", sans-serif; }
+.charts-total__label {
+  font-family: "OpenSansBold", "Arial", sans-serif; }
