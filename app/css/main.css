@@ -464,10 +464,11 @@ a:hover {
 
 .sl-item__title a {
   color: #00d346;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.3s ease; }
   .sl-item__title a:hover {
-    opacity: 0.6; }
+    opacity: 0.6;
+    text-decoration: none; }
 
 .slick-slide {
   margin: 0 !important; }

@@ -8,6 +8,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "labelRadius": 1,
       "colors": [
             "#3680be",
@@ -59,6 +60,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "colors": [
         "#3680be",
         "#cdcdcd",
@@ -111,6 +113,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -158,6 +161,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -205,6 +209,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -249,6 +254,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -286,6 +292,7 @@
       "startDuration": 1,
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "colors": [
         "#cdcdcd",
         "#3680be",
@@ -399,6 +406,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "labelRadius": 1,
       "colors": [
             "#3680be",
@@ -447,6 +455,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "colors": [
         "#3680be",
         "#cdcdcd",
@@ -499,6 +508,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -546,6 +556,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -593,6 +604,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -637,6 +649,7 @@
       "valueField": "column-1",
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
       "legend": {
@@ -674,6 +687,7 @@
       "startDuration": 1,
       "thousandsSeparator": " ",
       "theme": "light",
+      "fontFamily": "OpenSansRegular",
       "colors": [
         "#cdcdcd",
         "#3680be",
