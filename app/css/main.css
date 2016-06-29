@@ -669,10 +669,10 @@ a:hover {
         -ms-flex: 1;
             flex: 1; }
   .section-info__right {
-    -webkit-flex: 0 0 324px;
-        -ms-flex: 0 0 324px;
-            flex: 0 0 324px;
-    width: 324; }
+    -webkit-flex: 0 0 350px;
+        -ms-flex: 0 0 350px;
+            flex: 0 0 350px;
+    width: 350; }
   .section-info__container-link {
     color: #5c98ca; }
   .section-info__link {
@@ -876,3 +876,6 @@ a:hover {
     padding-top: 30px; }
     .interbank-row__text a {
       color: #1774c1; }
+
+.interbank-row-text-custom {
+  padding-top: 17px; }
