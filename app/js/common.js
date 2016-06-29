@@ -47,6 +47,7 @@ $(function() {
 
 
   $(window).scroll(function () {
+      
       if( $(window).scrollTop() > 1 && !($('.header-page__top').hasClass('sticky'))){
         $('.header-page__top').addClass('sticky');
       } else if ($(window).scrollTop() < 1){
@@ -56,18 +57,15 @@ $(function() {
 
   $(".scroll").click(function(event){
     event.preventDefault();
-    var mq = window.matchMedia( "(max-width : 768px)" );
+    
     var full_url = this.href;
     var parts = full_url.split("#");
     var trgt = parts[1];
     var target_offset = $("#"+trgt).offset();
     var target_top = target_offset.top
-    if (!mq.matches) {
+
       target_top -= 65
       $('html, body').animate({scrollTop:target_top}, 500);
-    } 
-    else {
-      $('html, body').animate({scrollTop:target_top}, 500);
-    };
+
   });
 });
