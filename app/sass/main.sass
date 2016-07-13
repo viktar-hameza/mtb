@@ -664,6 +664,23 @@ a:hover
     order: 1
     width: 128px
     flex: 0 0 128px
+.section-info-three--custom
+  .section-info__right
+    order: 1
+    width: 350px
+    flex: 0 0 350px
+.section-info-three--custom
+  .section-info__right
+    padding-top: 33px
+.corporate-middle--leasing
+  .columns__row
+    display: block
+    padding-top: 20px
+  .columns__col
+    float: left
+    width: 222px
+    &:first-child
+      margin-right: 50px
 .corporate-sec--three
   .section-info__right
     width: 450px
@@ -770,11 +787,7 @@ a:hover
   font-size: 16px
   text-transform: uppercase
   text-align: center
-  a
-    color: #ff1c1c
-    transition: $transition
-    &:hover
-      opacity: 0.6
+  color: #ff1c1c
   &--bar
     padding-top: 40px
   &--c2, &--c2 a
@@ -812,5 +825,48 @@ a:hover
 .interbank-row-text-custom
   padding-top: 17px
 
+.finance-middle
+  width: 520px
+  float: left
+  .columns__row
+    width: 520px
+    margin-top: 17px
+  .columns__col:first-child
+    width: 328px
+.section-info-dec1
+  text-align: right
+  // width: 197px
+  // flex: 0 0 197px
+.finance-sec
+  overflow: hidden
+
+
+.finance-right
+  float: right
+  width: 340px
+  margin-top: -125px
+.fin-feature
+  @extend %ulli
+
+.fin-feature__r
+  float: right
+  padding-left: 33px
+
+.fin-feature__item
+  overflow: hidden
+  padding-bottom: 46px
+  &:last-child
+    padding-bottom: 0
+
+.fin-feature__l
+  text-align: right
+  padding-top: 12px
+
+.fin-feature__title
+  font-family: $font-root-bold
+  font-size: 13px
+
+.fin-feature__link
+  color: #6da4b1
 // media
 @import "media"
