@@ -458,6 +458,8 @@ a:hover {
     color: #1d857a; }
     .sl-item--green .sl-item__title a {
       color: #1d857a; }
+  .sl-item__description a {
+    color: #00d346; }
 
 .sl-item-l__custom {
   text-align: left; }
@@ -798,6 +800,9 @@ a:hover {
     padding: 10px 0 10px; }
   .columns__title-c1 {
     color: #dc5e39; }
+
+.columns-col-custom {
+  width: 180px; }
 
 .columns-custom-col {
   width: 280px; }
