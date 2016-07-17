@@ -75,17 +75,23 @@ $(function() {
   $('.report-head__year').addClass('animated bounceInRight');
   $('.header-page__wrap-info').addClass("animated bounceInUp");
   $('.sl-item img').addClass("animated");
+  $('.retail__r img').addClass("animated");
   $('.section-title--bg').animated("fadeIn");
   $('.section-page__wrap-description').animated("fadeIn");
+  $('.retail__l, .fade--l, .section-info__left, .interbank-row--l').animated("fadeInLeft");
+  $('.retail__r, .fade--r, .section-info__right, .interbank-row--r').animated("fadeInRight");
+  $('.col-tr').animated("flipInY");
+  $('.columns__col').animated("flipInY");
+  $('.charts').animated("fadeIn");
   
 
 
-    $('img.animated').hover(
+  $('img.animated').hover(
      function() {
-      $(this).addClass('shake'); // Добавляем класс bounce
+      $(this).addClass('tada'); // Добавляем класс bounce
      },
      function() {
-      $(this).removeClass('shake'); // Убираем класс
+      $(this).removeClass('tada'); // Убираем класс
      }
   )
 
@@ -99,6 +105,18 @@ $(function() {
     }, {
       offset : "70%"
     });
+
+   $(".section-page--our-bank").waypoint(function() {
+      $(".features__items").each(function(index) {
+        var ths = $(this);
+        setInterval(function() {
+          ths.addClass("on");
+        }, 200*index);
+      });
+    }, {
+      offset : "70%"
+    });
+
 
 
 });

@@ -44,6 +44,9 @@ figure {
   content: "";
   display: table; }
 
+.main-page, .header-page, .section-page_content {
+  overflow: hidden; }
+
 body {
   min-width: 1030px;
   font: 13px "OpenSansRegular", "Arial", sans-serif;
