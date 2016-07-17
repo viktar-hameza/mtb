@@ -68,4 +68,37 @@ $(function() {
       $('html, body').animate({scrollTop:target_top}, 500);
 
   });
+
+  // $(".tabs__caption").animated("fadeInRight");
+  $('.report-head__title').addClass('animated zoomIn');
+  // $('.header-page__top').addClass('animated fadeInDown');
+  $('.report-head__year').addClass('animated bounceInRight');
+  $('.header-page__wrap-info').addClass("animated bounceInUp");
+  $('.sl-item img').addClass("animated");
+  $('.section-title--bg').animated("fadeIn");
+  $('.section-page__wrap-description').animated("fadeIn");
+  
+
+
+    $('img.animated').hover(
+     function() {
+      $(this).addClass('shake'); // Добавляем класс bounce
+     },
+     function() {
+      $(this).removeClass('shake'); // Убираем класс
+     }
+  )
+
+   $(".section-page--our-bank").waypoint(function() {
+      $(".features__items").each(function(index) {
+        var ths = $(this);
+        setInterval(function() {
+          ths.addClass("on");
+        }, 200*index);
+      });
+    }, {
+      offset : "70%"
+    });
+
+
 });

@@ -96,6 +96,9 @@ a:hover {
   .header-page__main {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 34px; }
+  .header-page__wrap-info {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
   .header-page__title {
     margin-top: 0;
     text-align: center;
@@ -153,7 +156,9 @@ a:hover {
     font-size: 265px;
     line-height: 1;
     font-family: "OpenSansBold", "Arial", sans-serif;
-    letter-spacing: -18px; }
+    letter-spacing: -18px;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
 
 .btn {
   display: inline-block;
@@ -198,7 +203,9 @@ a:hover {
   padding-bottom: 86px; }
 
 .section-page__wrap-description {
-  padding-bottom: 32px; }
+  padding-bottom: 32px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
 
 .section-page--bg .section-page__wrap-description {
   padding-top: 25px; }
@@ -247,7 +254,17 @@ a:hover {
     position: relative;
     width: 16.66667%;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .5s ease;
+    opacity: 0;
+    -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+            transform: translateY(-25px); }
+    .features__items.on {
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1; }
     .features__items--c1.active, .features__items--c1:hover {
       color: #629924; }
       .features__items--c1.active .features__number, .features__items--c1:hover .features__number {
