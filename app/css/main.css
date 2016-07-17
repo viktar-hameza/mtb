@@ -707,6 +707,9 @@ a:hover {
       -ms-flex: 0 0 290px;
           flex: 0 0 290px; }
 
+.section-info-r--dec {
+  text-align: right; }
+
 .corporate-sec--two {
   padding: 40px 0; }
 

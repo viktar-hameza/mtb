@@ -83,6 +83,9 @@ $(function() {
   $('.col-tr').animated("flipInY");
   $('.columns__col').animated("flipInY");
   $('.charts').animated("fadeIn");
+  $('.charts-col--l, .charts__col').animated("bounceIn");
+  $('.charts-col--r').animated("bounceIn");
+  $('.chart-bar').animated("bounceIn");
   
 
 
