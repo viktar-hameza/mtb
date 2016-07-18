@@ -680,120 +680,129 @@
   );
 
   AmCharts.makeChart("chartdiv-bar2",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "rotate": true,
-      "startDuration": 1,
-      "thousandsSeparator": " ",
-      "theme": "light",
-      "fontFamily": "OpenSansRegular",
-      "colors": [
-        "#cdcdcd",
-        "#3680be",
-        "#ff1c1c",
-      ],
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "[[title]] | [[category]]:[[value]]",
-          "fillAlphas": 1,
-          "id": "AmGraph-1",
-          "labelText": "[[value]]",
-          "title": "2015",
-          "type": "column",
-          "valueField": "column-1"
-        },
-        {
-          "balloonText": "[[title]] | [[category]]:[[value]]",
-          "bullet": "round",
-          "id": "AmGraph-2",
-          "labelText": "[[value]]",
-          "lineThickness": 2,
-          "title": "2014",
-          "valueField": "column-2"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "legend": {
-        "enabled": true,
-        "useGraphSettings": true
-      },
-      "titles": [
-        {
-          "id": "Title-1",
-          "size": 15,
-          "text": ""
-        }
-      ],
-      "dataProvider": [
-        {
-          "category": "Процентные доходы",
-          "column-1": "1439568",
-          "column-2": "1458486"
-        },
-        {
-          "category": "Процентные расходы",
-          "column-1": "668114",
-          "column-2": "659316"
-        },
-        {
-          "category": "Чистый процентный доход",
-          "column-1": "771454",
-          "column-2": "799170"
-        },
-        {
-          "category": "Отчисления в резервы",
-          "column-1": "387225",
-          "column-2": "326269"
-        },
-        {
-          "category": "Чистый комиссионный доход",
-          "column-1": "187698",
-          "column-2": "228654"
-        },
-        {
-          "category": "Прочие доходы",
-          "column-1": "260913",
-          "column-2": "134186"
-        },
-        {
-          "category": "Прочие расходы",
-          "column-1": "606483",
-          "column-2": "481426"
-        },
-        
-        {
-          "category": "Убыток от гиперинфляции",
-          "column-1": "null",
-          "column-2": "83961"
-        },
-        {
-          "category": "Прибыль до налога",
-          "column-1": "222093",
-          "column-2": "269799"
-        },
-        {
-          "category": "Налог на прибыль",
-          "column-1": "43032",
-          "column-2": "69323"
-        },
-        {
-          "category": "Прибыль за отчетный год",
-          "column-1": "179061",
-          "column-2": "200476"
-        }
-      ]
-    }
-  );
+          {
+            "type": "serial",
+            "categoryField": "category",
+            "rotate": true,
+            "colors": [
+              "#cdcdcd",
+              "#3680be",
+              "#84b761",
+              "#cc4748",
+              "#cd82ad",
+              "#2f4074",
+              "#448e4d",
+              "#b7b83f",
+              "#b9783f",
+              "#b93e3d",
+              "#913167"
+            ],
+            "startDuration": 1,
+            "fontFamily": "OpenSansRegular",
+            "theme": "light",
+            "thousandsSeparator": " ",
+            "categoryAxis": {
+              "gridPosition": "start"
+            },
+            "trendLines": [],
+            "graphs": [
+              {
+                "balloonText": "[[title]] | [[category]]:[[value]]",
+                "colorField": "color",
+                "fillAlphas": 1,
+                "id": "AmGraph-1",
+                "labelText": "[[value]]",
+                "title": "2015",
+                "type": "column",
+                "valueField": "column-1"
+              },
+              {
+                "balloonText": "[[title]] | [[category]]:[[value]]",
+                "colorField": "color",
+                "fillAlphas": 1,
+                "id": "AmGraph-2",
+                "labelText": "[[value]]",
+                "title": "2014",
+                "type": "column",
+                "valueField": "column-2"
+              }
+            ],
+            "guides": [],
+            "valueAxes": [
+              {
+                "id": "ValueAxis-1",
+                "title": ""
+              }
+            ],
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+              "enabled": true,
+              "useGraphSettings": true
+            },
+            "titles": [
+              {
+                "id": "Title-1",
+                "size": 15,
+                "text": ""
+              }
+            ],
+            "dataProvider": [
+              {
+                "category": "Процентные доходы",
+                "column-1": "1439568",
+                "column-2": "1458486"
+              },
+              {
+                "category": "Процентные расходы",
+                "column-1": "-668114",
+                "column-2": "-659316"
+              },
+              {
+                "category": "Чистый процентный доход",
+                "column-1": "771454",
+                "column-2": "799170"
+              },
+              {
+                "category": "Отчисления в резервы",
+                "column-1": "-387225",
+                "column-2": "-326269"
+              },
+              {
+                "category": "Чистый комиссионный доход",
+                "column-1": "187698",
+                "column-2": "228654"
+              },
+              {
+                "category": "Прочие доходы",
+                "column-1": "260913",
+                "column-2": "134186"
+              },
+              {
+                "category": "Прочие расходы",
+                "column-1": "-606483",
+                "column-2": "-481426"
+              },
+              {
+                "category": "Убыток от гиперинфляции",
+                "column-1": "null",
+                "column-2": "-83961"
+              },
+              {
+                "category": "Прибыль до налога",
+                "column-1": "222093",
+                "column-2": "269799"
+              },
+              {
+                "category": "Налог на прибыль",
+                "column-1": "-43032",
+                "column-2": "-69323"
+              },
+              {
+                "category": "Прибыль за отчетный год",
+                "column-1": "179061",
+                "column-2": "200476"
+              }
+            ]
+          }
+        );
