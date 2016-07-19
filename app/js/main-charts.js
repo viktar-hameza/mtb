@@ -17,12 +17,6 @@
           ],
       "allLabels": [],
       "balloon": {},
-      "legend": {
-          "enabled": true,
-          "align": "left",
-          "markerType": "square",
-          "valueText": ""
-        },
       "titles": [
         {
           "id": "Title-1",
@@ -68,12 +62,6 @@
       ],
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -116,12 +104,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -164,12 +146,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -212,13 +188,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": "",
-        "maxColumns": 1
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -257,13 +226,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": "",
-        "maxColumns": 1
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -289,15 +251,23 @@
       "type": "serial",
       "categoryField": "category",
       "rotate": true,
-      "startDuration": 1,
-      "thousandsSeparator": " ",
-      "theme": "light",
-      "fontFamily": "OpenSansRegular",
       "colors": [
-        "#cdcdcd",
         "#3680be",
-        "#ff1c1c",
+        "#cdcdcd",
+        "#84b761",
+        "#cc4748",
+        "#cd82ad",
+        "#2f4074",
+        "#448e4d",
+        "#b7b83f",
+        "#b9783f",
+        "#b93e3d",
+        "#913167"
       ],
+      "startDuration": 1,
+      "fontFamily": "OpenSansRegular",
+      "theme": "light",
+      "thousandsSeparator": " ",
       "categoryAxis": {
         "gridPosition": "start"
       },
@@ -305,6 +275,7 @@
       "graphs": [
         {
           "balloonText": "[[title]] | [[category]]:[[value]]",
+          "colorField": "color",
           "fillAlphas": 1,
           "id": "AmGraph-1",
           "labelText": "[[value]]",
@@ -314,11 +285,12 @@
         },
         {
           "balloonText": "[[title]] | [[category]]:[[value]]",
-          "bullet": "round",
+          "colorField": "color",
+          "fillAlphas": 1,
           "id": "AmGraph-2",
           "labelText": "[[value]]",
-          "lineThickness": 2,
           "title": "2014",
+          "type": "column",
           "valueField": "column-2"
         }
       ],
@@ -350,8 +322,8 @@
         },
         {
           "category": "Процентные расходы",
-          "column-1": "663774",
-          "column-2": "621916"
+          "column-1": "-663774",
+          "column-2": "-621916"
         },
         {
           "category": "Чистый процентный доход",
@@ -360,8 +332,8 @@
         },
         {
           "category": "Отчисления в резервы",
-          "column-1": "618347",
-          "column-2": "226321"
+          "column-1": "-618347",
+          "column-2": "-226321"
         },
         {
           "category": "Чистый комиссионный доход",
@@ -375,8 +347,8 @@
         },
         {
           "category": "Прочие расходы",
-          "column-1": "660415",
-          "column-2": "462145"
+          "column-1": "-660415",
+          "column-2": "-462145"
         },
         {
           "category": "Прибыль до налога",
@@ -385,8 +357,8 @@
         },
         {
           "category": "Налог на прибыль",
-          "column-1": "4672",
-          "column-2": "38503"
+          "column-1": "-4672",
+          "column-2": "-38503"
         },
         {
           "category": "Прибыль за отчетный год",
@@ -415,12 +387,6 @@
           ],
       "allLabels": [],
       "balloon": {},
-      "legend": {
-          "enabled": true,
-          "align": "left",
-          "markerType": "square",
-          "valueText": ""
-        },
       "titles": [
         {
           "id": "Title-1",
@@ -463,12 +429,6 @@
       ],
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -511,12 +471,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -559,12 +513,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": ""
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -607,13 +555,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": "",
-        "maxColumns": 1
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -652,13 +593,6 @@
       "fontFamily": "OpenSansRegular",
       "allLabels": [],
       "balloon": {},
-      "legend": {
-        "enabled": true,
-        "align": "left",
-        "markerType": "square",
-        "valueText": "",
-        "maxColumns": 1
-      },
       "titles": [
         {
           "id": "Title-1",
@@ -685,8 +619,8 @@
             "categoryField": "category",
             "rotate": true,
             "colors": [
-              "#cdcdcd",
               "#3680be",
+              "#cdcdcd",
               "#84b761",
               "#cc4748",
               "#cd82ad",

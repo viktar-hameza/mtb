@@ -113,7 +113,7 @@ a:hover
 .report-head
   display: flex
   align-items: center
-  padding: 0 46px
+  padding: 0 26px
   padding-bottom: 38px
   color: #fff
   &__title
@@ -812,7 +812,7 @@ a:hover
   &--c2, &--c2 a
     color: #006cc6
 .charts-total
-  // text-align: center
+  text-align: center
   // padding-left: 10px
   &__label
     font-family: $font-root-bold
@@ -900,5 +900,49 @@ a:hover
 .charts__sec-top
   margin-bottom: 20px
 
+.arrow-down
+  display: inline-block
+  width: 30px
+  height: 20px
+  background: url(../img/svg/arrow-down.svg)
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  &:hover
+    text-decoration: none
+    opacity: 0.7
+    cursor: pointer
+    animation-play-state: paused;
+.header-page__arrow-down
+  padding-bottom: 20px
+  text-align: center
+
+.legend
+  margin: 0 auto
+  &__list
+    @extend %ulli
+    margin-bottom: 36px
+  &__item
+    margin-bottom: 10px
+  &--one
+    width: 421px
+  &--two
+    width: 290px
+  &--three
+    width: 145px
+.legend-col
+  display: inline-block
+  width: 16px
+  height: 16px
+  vertical-align: top
+  margin-right: 3px
+  &--blue
+    background: #3680be
+  &--gray
+    background: #cdcdcd
+  &--red
+    background: #ff1c1c
 // media
 @import "media"

@@ -57,7 +57,7 @@ p {
   margin-top: 0;
   margin-bottom: 10px; }
 
-.main-nav__list, .features__list, .tabs__caption, .regular__list, .fin-feature {
+.main-nav__list, .features__list, .tabs__caption, .regular__list, .fin-feature, .legend__list {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -144,7 +144,7 @@ a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 46px;
+  padding: 0 26px;
   padding-bottom: 38px;
   color: #fff; }
   .report-head__title {
@@ -903,8 +903,10 @@ a:hover {
   .charts-title--c2, .charts-title--c2 a {
     color: #006cc6; }
 
-.charts-total__label {
-  font-family: "OpenSansBold", "Arial", sans-serif; }
+.charts-total {
+  text-align: center; }
+  .charts-total__label {
+    font-family: "OpenSansBold", "Arial", sans-serif; }
 
 .interbank {
   padding: 30px 0; }
@@ -980,3 +982,56 @@ a:hover {
 
 .charts__sec-top {
   margin-bottom: 20px; }
+
+.arrow-down {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background: url(../img/svg/arrow-down.svg);
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+  .arrow-down:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    cursor: pointer;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
+
+.header-page__arrow-down {
+  padding-bottom: 20px;
+  text-align: center; }
+
+.legend {
+  margin: 0 auto; }
+  .legend__list {
+    margin-bottom: 36px; }
+  .legend__item {
+    margin-bottom: 10px; }
+  .legend--one {
+    width: 421px; }
+  .legend--two {
+    width: 290px; }
+  .legend--three {
+    width: 145px; }
+
+.legend-col {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  margin-right: 3px; }
+  .legend-col--blue {
+    background: #3680be; }
+  .legend-col--gray {
+    background: #cdcdcd; }
+  .legend-col--red {
+    background: #ff1c1c; }
