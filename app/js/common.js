@@ -80,12 +80,12 @@ $(function() {
   $('.section-page__wrap-description').animated("fadeIn");
   $('.retail__l, .fade--l, .section-info__left, .interbank-row--l').animated("fadeInLeft");
   $('.retail__r, .fade--r, .section-info__right, .interbank-row--r').animated("fadeInRight");
-/*  $('.col-tr').animated("flipInY");
+  $('.col-tr').animated("flipInY");
   $('.columns__col').animated("flipInY");
   $('.charts').animated("fadeIn");
   $('.charts-col--l, .charts__col').animated("bounceIn");
   $('.charts-col--r').animated("bounceIn");
-  $('.chart-bar').animated("bounceIn");*/
+  $('.chart-bar').animated("bounceIn");
   
 
 
