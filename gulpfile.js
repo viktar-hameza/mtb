@@ -97,7 +97,7 @@ gulp.task('useref', function() {
 
 // Optimizing Images
 gulp.task('img', function() {
-  return gulp.src(['app/img/**/*', '!app/img/imgorigin/**'])
+  return gulp.src(['app/img/**/*', '!app/img/svg/**', '!app/img/favicon/**'])
     .pipe(cache(imagemin({
       interlaced: true,
       progressive: true,
