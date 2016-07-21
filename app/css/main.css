@@ -1011,17 +1011,18 @@ a:hover {
   text-align: center; }
 
 .legend {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 11px; }
   .legend__list {
     margin-bottom: 36px; }
   .legend__item {
     margin-bottom: 10px; }
   .legend--one {
-    width: 421px; }
+    width: 390px; }
   .legend--two {
-    width: 290px; }
+    width: 250px; }
   .legend--three {
-    width: 145px; }
+    width: 272px; }
 
 .legend-col {
   display: inline-block;
