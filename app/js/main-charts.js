@@ -298,6 +298,10 @@
       "valueAxes": [
         {
           "id": "ValueAxis-1",
+          "fontSize": 9,
+          // "centerLabels": true,
+          // "gridThickness": 0,
+          // "labelsEnabled": false,
           "title": ""
         }
       ],
@@ -665,6 +669,7 @@
             "valueAxes": [
               {
                 "id": "ValueAxis-1",
+                "fontSize": 9,
                 "title": ""
               }
             ],
