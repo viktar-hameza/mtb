@@ -74,7 +74,7 @@ $(function() {
   // $('.header-page__top').addClass('animated fadeInDown');
   $('.report-head__year').addClass('animated bounceInRight');
   $('.header-page__wrap-info').addClass("animated bounceInUp");
-  $('.sl-item img').addClass("animated");
+  /*$('.sl-item img').addClass("animated");
   $('.retail__r img').addClass("animated");
   $('.section-title--bg').animated("fadeIn");
   $('.section-page__wrap-description').animated("fadeIn");
@@ -85,7 +85,7 @@ $(function() {
   $('.charts').animated("fadeIn");
   $('.charts-col--l, .charts__col').animated("bounceIn");
   $('.charts-col--r').animated("bounceIn");
-  $('.chart-bar').animated("bounceIn");
+  $('.chart-bar').animated("bounceIn");*/
   
 
 

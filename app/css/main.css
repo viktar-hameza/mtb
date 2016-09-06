@@ -1001,8 +1001,6 @@ a:hover {
           animation-fill-mode: both; }
   .arrow-down:hover {
     text-decoration: none;
-    opacity: 0.7;
-    cursor: pointer;
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
 
